@@ -33,7 +33,7 @@ for i in range(1, temp_reading_count + 1):
         print("Error: Temperature must be between 40 and 100 degrees." )
         temp_reading = int(input(f"Enter temperature reading {i}: "))
     
-    #adds  valid tempurature to the readings list
+    #adds valid tempurature to the readings list
     temp_readings.append(temp_reading)
 
     #count temps below or above temp comfort range
@@ -43,7 +43,7 @@ for i in range(1, temp_reading_count + 1):
         WARM_COUNT += 1
 
 #calculate the avg of the temps entered
-temp_avg = sum(temp_readings) / len(temp_reading_count)
+temp_avg = sum(temp_readings) / temp_reading_count
 
 #display summary
 print("Smart Thermostat Summary")
